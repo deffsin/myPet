@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
 		15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC42B306A5700454FA8 /* ContentView.swift */; };
-		15D43DC72B306A5A00454FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC62B306A5A00454FA8 /* Assets.xcassets */; };
+		15D43DC72B306A5A00454FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC62B306A5A00454FA8 /* Images.xcassets */; };
 		15D43DCA2B306A5A00454FA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC92B306A5A00454FA8 /* Preview Assets.xcassets */; };
+		15D43DDD2B306BD600454FA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DDC2B306BD600454FA8 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D43DC22B306A5700454FA8 /* myPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPetApp.swift; sourceTree = "<group>"; };
 		15D43DC42B306A5700454FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		15D43DC62B306A5A00454FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15D43DC62B306A5A00454FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		15D43DC92B306A5A00454FA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15D43DDC2B306BD600454FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,11 @@
 		15D43DC12B306A5700454FA8 /* myPet */ = {
 			isa = PBXGroup;
 			children = (
+				15D43DDC2B306BD600454FA8 /* Info.plist */,
 				15D43DC22B306A5700454FA8 /* myPetApp.swift */,
 				15D43DC42B306A5700454FA8 /* ContentView.swift */,
-				15D43DC62B306A5A00454FA8 /* Assets.xcassets */,
+				15D43DD02B306AFD00454FA8 /* Views */,
+				15D43DD22B306B0F00454FA8 /* Shared */,
 				15D43DC82B306A5A00454FA8 /* Preview Content */,
 			);
 			path = myPet;
@@ -65,6 +69,85 @@
 				15D43DC92B306A5A00454FA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15D43DD02B306AFD00454FA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15D43DD42B306B4B00454FA8 /* Authentication */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15D43DD22B306B0F00454FA8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				15D43DD62B306B5E00454FA8 /* ViewModifiers */,
+				15D43DDA2B306B9400454FA8 /* Enums */,
+				15D43DD72B306B6500454FA8 /* Assets */,
+				15D43DD52B306B5700454FA8 /* Extensions */,
+				15D43DD82B306B6E00454FA8 /* SwiftGen */,
+				15D43DD92B306B7400454FA8 /* Localizables */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		15D43DD42B306B4B00454FA8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		15D43DD52B306B5700454FA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15D43DD62B306B5E00454FA8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		15D43DD72B306B6500454FA8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				15D43DDB2B306BAD00454FA8 /* Fonts */,
+				15D43DC62B306A5A00454FA8 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		15D43DD82B306B6E00454FA8 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		15D43DD92B306B7400454FA8 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		15D43DDA2B306B9400454FA8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		15D43DDB2B306BAD00454FA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D43DCA2B306A5A00454FA8 /* Preview Assets.xcassets in Resources */,
-				15D43DC72B306A5A00454FA8 /* Assets.xcassets in Resources */,
+				15D43DC72B306A5A00454FA8 /* Images.xcassets in Resources */,
+				15D43DDD2B306BD600454FA8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
