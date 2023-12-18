@@ -13,6 +13,9 @@
 		15D43DCA2B306A5A00454FA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC92B306A5A00454FA8 /* Preview Assets.xcassets */; };
 		15D43DE12B306D3500454FA8 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DE02B306D3500454FA8 /* AppFont.swift */; };
 		15D43DE32B306EDD00454FA8 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DE22B306EDD00454FA8 /* Font.swift */; };
+		15D43DEB2B309B3B00454FA8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DEA2B309B3B00454FA8 /* SignInViewModel.swift */; };
+		15D43DED2B309B4E00454FA8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DEC2B309B4E00454FA8 /* SignInView.swift */; };
+		15D43DF22B309FF300454FA8 /* DarkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DF12B309FF300454FA8 /* DarkBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		15D43DDF2B306D1F00454FA8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		15D43DE02B306D3500454FA8 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		15D43DE22B306EDD00454FA8 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		15D43DEA2B309B3B00454FA8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		15D43DEC2B309B4E00454FA8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		15D43DF12B309FF300454FA8 /* DarkBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 		15D43DD42B306B4B00454FA8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				15D43DEC2B309B4E00454FA8 /* SignInView.swift */,
+				15D43DEA2B309B3B00454FA8 /* SignInViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 		15D43DD72B306B6500454FA8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				15D43DF02B309FE400454FA8 /* Backgrounds */,
 				15D43DDB2B306BAD00454FA8 /* Fonts */,
 				15D43DC62B306A5A00454FA8 /* Images.xcassets */,
 			);
@@ -157,6 +166,14 @@
 				15D43DE02B306D3500454FA8 /* AppFont.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		15D43DF02B309FE400454FA8 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				15D43DF12B309FF300454FA8 /* DarkBackground.swift */,
+			);
+			path = Backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +247,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
+				15D43DF22B309FF300454FA8 /* DarkBackground.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
+				15D43DED2B309B4E00454FA8 /* SignInView.swift in Sources */,
 				15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */,
 				15D43DE12B306D3500454FA8 /* AppFont.swift in Sources */,
+				15D43DEB2B309B3B00454FA8 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
