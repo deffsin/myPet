@@ -11,10 +11,10 @@ let tabBackGroundColor = Color.init(white: 0.92)
 
 struct TabBar: View {
     @StateObject var marketViewModel = MarketViewModel()
-
-    @Binding var showSignInView: Bool
     
     @State private var selectedTab: Tab = .market
+    
+    @Binding var showSignInView: Bool
     
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct TabBar: View {
             ZStack {
                 switch selectedTab {
                 case .market:
-                    MarketView(marketViewModel: marketViewModel)
+                    MarketView(marketViewModel: marketViewModel, showSignInView: $showSignInView)
                 }
                 
                 TabBarView(selectedTab: $selectedTab)

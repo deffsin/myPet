@@ -6,15 +6,26 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import GoogleSignInSwift
+import AuthenticationServices
 
 struct AuthenticationView: View {
+    @StateObject private var viewModel = AuthenticationViewModel()
+    @Binding var showSignInView: Bool
+    
     var body: some View {
-        ZStack {
-            DarkBackground()
+        NavigationStack {
+            
+            VStack(spacing: 20) {
+                SocialMediaButton(imageName: "apple", socialName: "Sign in with Apple", action: viewModel.signInApple, showSignInView: $showSignInView)
+                SocialMediaButton(imageName: "google", socialName: "Sign in with Google", action: viewModel.signInGoogle, showSignInView: $showSignInView)
+            }
+            .offset(y: -60)
         }
     }
 }
 
 #Preview {
-    AuthenticationView()
+    AuthenticationView(showSignInView: .constant(false))
 }

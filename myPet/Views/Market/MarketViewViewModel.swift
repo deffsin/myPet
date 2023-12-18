@@ -10,4 +10,7 @@ import Foundation
 @MainActor
 final class MarketViewModel: ObservableObject {
     
+    func signOut() throws {
+        try AuthenticationManager.shared.signOut()
+    }
 }
