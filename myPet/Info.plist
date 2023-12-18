@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.788405182368-i3j0i7649a36mneicgfm9p3l6240d15t</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>Google Sign In</string>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>788405182368-i3j0i7649a36mneicgfm9p3l6240d15t.apps.googleusercontent.com</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Poppins-SemiBold.ttf</string>
