@@ -40,12 +40,13 @@ fileprivate struct TabsLayoutView: View {
             
             ForEach(Tab.allCases) { tab in
                 TabButton(tab: tab, selectedTab: $selectedTab, namespace: namespace)
-                    .frame(width: 65, height: 65, alignment: .center)
+                    .frame(width: 55, height: 55, alignment: .center)
+                    .padding(.bottom, 10)
                 
                 Spacer(minLength: 0)
             }
         }
-        .offset(y: -20)
+        .offset(y: -12)
     }
     
     
