@@ -40,6 +40,11 @@
 		15D43E292B30CB0600454FA8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E282B30CB0600454FA8 /* UserModel.swift */; };
 		15D43E2D2B30CB6800454FA8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E2C2B30CB6800454FA8 /* UserManager.swift */; };
 		15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E2F2B30CB9800454FA8 /* UserManagerError.swift */; };
+		15D43E362B33413D00454FA8 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E352B33413D00454FA8 /* ShopView.swift */; };
+		15D43E382B33414900454FA8 /* MissingPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E372B33414900454FA8 /* MissingPetsView.swift */; };
+		15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E392B33415200454FA8 /* ClinicsView.swift */; };
+		15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E3C2B33416500454FA8 /* ProfileView.swift */; };
+		15D43E3F2B3342B400454FA8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E3E2B3342B400454FA8 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,11 @@
 		15D43E282B30CB0600454FA8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		15D43E2C2B30CB6800454FA8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		15D43E2F2B30CB9800454FA8 /* UserManagerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagerError.swift; sourceTree = "<group>"; };
+		15D43E352B33413D00454FA8 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		15D43E372B33414900454FA8 /* MissingPetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingPetsView.swift; sourceTree = "<group>"; };
+		15D43E392B33415200454FA8 /* ClinicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsView.swift; sourceTree = "<group>"; };
+		15D43E3C2B33416500454FA8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		15D43E3E2B3342B400454FA8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,10 @@
 				15D43E022B30AE0300454FA8 /* RootView.swift */,
 				15D43DD42B306B4B00454FA8 /* Authentication */,
 				15D43E142B30B4BF00454FA8 /* Market */,
+				15D43E312B33409500454FA8 /* Shop */,
+				15D43E322B3340AF00454FA8 /* Missing Pets */,
+				15D43E332B3340D300454FA8 /* Clinics */,
+				15D43E342B3340E100454FA8 /* Profile */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +316,39 @@
 			path = AppErrors;
 			sourceTree = "<group>";
 		};
+		15D43E312B33409500454FA8 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				15D43E352B33413D00454FA8 /* ShopView.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		15D43E322B3340AF00454FA8 /* Missing Pets */ = {
+			isa = PBXGroup;
+			children = (
+				15D43E372B33414900454FA8 /* MissingPetsView.swift */,
+			);
+			path = "Missing Pets";
+			sourceTree = "<group>";
+		};
+		15D43E332B3340D300454FA8 /* Clinics */ = {
+			isa = PBXGroup;
+			children = (
+				15D43E392B33415200454FA8 /* ClinicsView.swift */,
+			);
+			path = Clinics;
+			sourceTree = "<group>";
+		};
+		15D43E342B3340E100454FA8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				15D43E3C2B33416500454FA8 /* ProfileView.swift */,
+				15D43E3E2B3342B400454FA8 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,13 +445,18 @@
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
 				15D43E162B30B4E600454FA8 /* MarketView.swift in Sources */,
 				15D43DF22B309FF300454FA8 /* DarkBackground.swift in Sources */,
+				15D43E362B33413D00454FA8 /* ShopView.swift in Sources */,
 				15D43E262B30C89A00454FA8 /* SocialMediaButton.swift in Sources */,
 				15D43DF62B30A79800454FA8 /* AuthenticationViewModel.swift in Sources */,
 				15D43E232B30C0B400454FA8 /* SignInAppleHelper.swift in Sources */,
 				15D43E212B30C0B400454FA8 /* SignInGoogleHelper.swift in Sources */,
+				15D43E3F2B3342B400454FA8 /* ProfileViewModel.swift in Sources */,
 				15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */,
 				15D43DF42B30A78D00454FA8 /* AuthenticationView.swift in Sources */,
+				15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
+				15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */,
+				15D43E382B33414900454FA8 /* MissingPetsView.swift in Sources */,
 				15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */,
 				15D43E1A2B30B63400454FA8 /* TabBarView.swift in Sources */,
 				15D43E292B30CB0600454FA8 /* UserModel.swift in Sources */,

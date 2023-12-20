@@ -11,6 +11,7 @@ let tabBackGroundColor = Color.init(white: 0.92)
 
 struct TabBar: View {
     @StateObject var marketViewModel = MarketViewModel()
+    @StateObject var profileViewModel = ProfileViewModel()
     
     @State private var selectedTab: Tab = .market
     
@@ -24,7 +25,15 @@ struct TabBar: View {
             ZStack {
                 switch selectedTab {
                 case .market:
-                    MarketView(marketViewModel: marketViewModel, showSignInView: $showSignInView)
+                    MarketView(marketViewModel: marketViewModel)
+                case .shop:
+                    ShopView()
+                case .missingPets:
+                    MissingPetsView()
+                case .clinics:
+                    ClinicsView()
+                case .profile:
+                    ProfileView(profileViewModel: profileViewModel, showSignInView: $showSignInView)
                 }
                 
                 TabBarView(selectedTab: $selectedTab)
@@ -43,7 +52,7 @@ enum Tab: Int, Identifiable, CaseIterable, Comparable {
         lhs.rawValue < rhs.rawValue
     }
     
-    case market
+    case market, shop, missingPets, clinics, profile
     
     internal var id: Int { rawValue }
     
@@ -51,6 +60,14 @@ enum Tab: Int, Identifiable, CaseIterable, Comparable {
         switch self {
         case .market:
             return "pawprint"
+        case .shop:
+            return "basket"
+        case .missingPets:
+            return "bolt"
+        case .clinics:
+            return "cross"
+        case .profile:
+            return "person"
         }
     }
 }
