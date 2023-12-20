@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
 		15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC42B306A5700454FA8 /* ContentView.swift */; };
 		15D43DC72B306A5A00454FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC62B306A5A00454FA8 /* Images.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D43DC22B306A5700454FA8 /* myPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPetApp.swift; sourceTree = "<group>"; };
 		15D43DC42B306A5700454FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1506C7022B3364180010022F /* ViewOffsetKey */ = {
+			isa = PBXGroup;
+			children = (
+				1506C7032B3364320010022F /* ViewOffsetKey.swift */,
+			);
+			path = ViewOffsetKey;
+			sourceTree = "<group>";
+		};
 		15D43DB62B306A5700454FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				15D43E1B2B30B63700454FA8 /* TabBar */,
+				1506C7022B3364180010022F /* ViewOffsetKey */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -453,6 +464,7 @@
 				15D43E3F2B3342B400454FA8 /* ProfileViewModel.swift in Sources */,
 				15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */,
 				15D43DF42B30A78D00454FA8 /* AuthenticationView.swift in Sources */,
+				1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */,
 				15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
 				15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */,
