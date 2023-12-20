@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
+		1506C7072B33776B0010022F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7062B33776B0010022F /* AppColor.swift */; };
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
 		15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC42B306A5700454FA8 /* ContentView.swift */; };
 		15D43DC72B306A5A00454FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC62B306A5A00454FA8 /* Images.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
+		1506C7062B33776B0010022F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D43DC22B306A5700454FA8 /* myPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPetApp.swift; sourceTree = "<group>"; };
 		15D43DC42B306A5700454FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 				1506C7032B3364320010022F /* ViewOffsetKey.swift */,
 			);
 			path = ViewOffsetKey;
+			sourceTree = "<group>";
+		};
+		1506C7052B33774D0010022F /* AppColors */ = {
+			isa = PBXGroup;
+			children = (
+				1506C7062B33776B0010022F /* AppColor.swift */,
+			);
+			path = AppColors;
 			sourceTree = "<group>";
 		};
 		15D43DB62B306A5700454FA8 = {
@@ -235,6 +245,7 @@
 		15D43DDA2B306B9400454FA8 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				1506C7052B33774D0010022F /* AppColors */,
 				15D43E2E2B30CB9800454FA8 /* AppErrors */,
 			);
 			path = Enums;
@@ -455,6 +466,7 @@
 				15D43E032B30AE0300454FA8 /* RootView.swift in Sources */,
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
 				15D43E162B30B4E600454FA8 /* MarketView.swift in Sources */,
+				1506C7072B33776B0010022F /* AppColor.swift in Sources */,
 				15D43DF22B309FF300454FA8 /* DarkBackground.swift in Sources */,
 				15D43E362B33413D00454FA8 /* ShopView.swift in Sources */,
 				15D43E262B30C89A00454FA8 /* SocialMediaButton.swift in Sources */,

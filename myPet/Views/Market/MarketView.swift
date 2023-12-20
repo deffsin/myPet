@@ -24,14 +24,16 @@ struct MarketView: View {
             
             ScrollView {
                 
-                VStack(spacing: 20) {
-                    
+                VStack(spacing: 15) {
+                    ForEach(0...4, id: \.self) { cell in
+                        buildCell(fullname: "Alice", petname: "Bruh", description: "Good pet")
+                    }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(GeometryReader {
                     Color.clear.preference(key: ViewOffsetKey.self, value: $0.frame(in: .global).minY)
                 })
-                .padding(.top, 40)
+                .padding(.horizontal, 15)
+                .padding(.top, 50)
             }
             .onPreferenceChange(ViewOffsetKey.self) { offset in
                 withAnimation {
@@ -42,6 +44,31 @@ struct MarketView: View {
                 overlayView(offset: scrollOffset)
             }
         }
+    }
+    
+    func buildCell(fullname: String, petname: String, description: String) -> some View {
+        ZStack {
+            VStack {
+                HStack {
+                    Text("a") // image
+                        .frame(width: 115)
+                        .frame(maxHeight: .infinity)
+                        .background(.cyan)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                    Spacer()
+                }
+            }
+            .padding(7)
+        }
+        .foregroundStyle(.black)
+        .frame(maxWidth: .infinity)
+        .frame(height: 120)
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(Color.green, lineWidth: 1)
+        )
     }
     
     func overlayView(offset: CGFloat) -> some View {
@@ -71,7 +98,7 @@ struct MarketView: View {
                         .resizable()
                         .foregroundColor(.white)
                         .padding(9)
-                        .background(Circle().fill(.green))
+                        .background(Circle().fill(Color(appColor: .greenColor)))
                         .frame(width: 39, height: 39)
                         .offset(x: -limitedOffset * 0.1)
                         .padding(.bottom, 3)
