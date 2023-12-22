@@ -13,4 +13,5 @@ extension Font {
     static let fontSemiBoldSmall = AppFont.semiBold.font(size: 16)
     static let fontSemiBoldUltraSmall = AppFont.semiBold.font(size: 12)
     static let fontRegularSmall = AppFont.regular.font(size: 17)
+    static let fontRegularUltraSmall = AppFont.regular.font(size: 12)
 }

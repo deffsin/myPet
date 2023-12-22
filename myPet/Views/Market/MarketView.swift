@@ -14,7 +14,9 @@ struct MarketView: View {
     @State private var scrollOffset: CGFloat = 0
     
     var body: some View {
-        buildMainContent()
+        NavigationStack {
+            buildMainContent()
+        }
     }
     
     @ViewBuilder
@@ -26,7 +28,9 @@ struct MarketView: View {
                 
                 VStack(spacing: 15) {
                     ForEach(0...4, id: \.self) { cell in
-                        buildCell(fullname: "Alice", petname: "Bruh", description: "Good pet")
+                        NavigationLink(destination: EmptyView()) {
+                            buildCell(fullname: "Alice", petname: "Bruh", description: "Good pet")
+                        }
                     }
                 }
                 .background(GeometryReader {
@@ -49,21 +53,60 @@ struct MarketView: View {
     func buildCell(fullname: String, petname: String, description: String) -> some View {
         ZStack {
             VStack {
-                HStack {
+                HStack(spacing: 15) {
                     Text("a") // image
                         .frame(width: 115)
                         .frame(maxHeight: .infinity)
                         .background(.cyan)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
+                        .overlay {
+                            HStack(spacing: 2) {
+                                Image(systemName: "camera")
+                                    .font(.system(size: 13))
+                                Text("7")
+                                    .font(.fontRegularUltraSmall)
+                            }
+                            .opacity(0.7)
+                            .offset(x: -35, y: 40)
+                        }
+                    
+                    VStack(alignment: .leading, spacing: 5) {
+                        HStack {
+                            Text("Breed")
+                                .font(.fontSemiBoldMedium)
+                            Spacer()
+                            Button(action: {
+                                
+                            }) {
+                                Image(systemName: "star")
+                                    .opacity(0.4)
+                                    .offset(x: 15, y: 5)
+                            }
+                        }
+                        
+                        Text("500$")
+                            .font(.fontRegularSmall)
+                        Spacer()
+                        
+                        HStack {
+                            Text("Tallinn, Estonia")
+                                .font(.fontSemiBoldUltraSmall)
+                            Spacer()
+                            Text("20.12.23")
+                                .font(.fontRegularUltraSmall)
+                        }
+                        .padding(.bottom, 3)
+                    }
+                    .padding(.top, 5)
                     Spacer()
                 }
             }
-            .padding(7)
+            .padding(5)
         }
         .foregroundStyle(.black)
         .frame(maxWidth: .infinity)
         .frame(height: 120)
-        .background(.white)
+        .background(.white.opacity(0.4))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .overlay(
             RoundedRectangle(cornerRadius: 15)
