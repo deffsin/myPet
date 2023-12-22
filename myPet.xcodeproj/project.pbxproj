@@ -32,7 +32,7 @@
 		15D43E112B30B15A00454FA8 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15D43E102B30B15A00454FA8 /* GoogleSignInSwift */; };
 		15D43E132B30B42B00454FA8 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E122B30B42B00454FA8 /* TabBar.swift */; };
 		15D43E162B30B4E600454FA8 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E152B30B4E600454FA8 /* MarketView.swift */; };
-		15D43E182B30B53900454FA8 /* MarketViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E172B30B53900454FA8 /* MarketViewViewModel.swift */; };
+		15D43E182B30B53900454FA8 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E172B30B53900454FA8 /* MarketViewModel.swift */; };
 		15D43E1A2B30B63400454FA8 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E192B30B63400454FA8 /* TabBarView.swift */; };
 		15D43E212B30C0B400454FA8 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E1D2B30C0B300454FA8 /* SignInGoogleHelper.swift */; };
 		15D43E222B30C0B400454FA8 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43E1E2B30C0B300454FA8 /* AuthDataResultModel.swift */; };
@@ -69,7 +69,7 @@
 		15D43E042B30AEC700454FA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15D43E122B30B42B00454FA8 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		15D43E152B30B4E600454FA8 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
-		15D43E172B30B53900454FA8 /* MarketViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewViewModel.swift; sourceTree = "<group>"; };
+		15D43E172B30B53900454FA8 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
 		15D43E192B30B63400454FA8 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		15D43E1D2B30C0B300454FA8 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		15D43E1E2B30C0B300454FA8 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				15D43E152B30B4E600454FA8 /* MarketView.swift */,
-				15D43E172B30B53900454FA8 /* MarketViewViewModel.swift */,
+				15D43E172B30B53900454FA8 /* MarketViewModel.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -461,7 +461,7 @@
 				15D43E132B30B42B00454FA8 /* TabBar.swift in Sources */,
 				15D43E242B30C0B400454FA8 /* AuthenticationManager.swift in Sources */,
 				15D43E2D2B30CB6800454FA8 /* UserManager.swift in Sources */,
-				15D43E182B30B53900454FA8 /* MarketViewViewModel.swift in Sources */,
+				15D43E182B30B53900454FA8 /* MarketViewModel.swift in Sources */,
 				15D43E222B30C0B400454FA8 /* AuthDataResultModel.swift in Sources */,
 				15D43E032B30AE0300454FA8 /* RootView.swift in Sources */,
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
