@@ -12,6 +12,9 @@ struct MarketView: View {
     @ObservedObject var marketViewModel: MarketViewModel
     
     @State private var scrollOffset: CGFloat = 0
+    @State private var isStarFilled: Bool = false
+    
+    @Binding var showSheet: Bool
     
     var body: some View {
         NavigationStack {
@@ -76,10 +79,11 @@ struct MarketView: View {
                                 .font(.fontSemiBoldMedium)
                             Spacer()
                             Button(action: {
-                                
+                                isStarFilled.toggle()
                             }) {
-                                Image(systemName: "star")
-                                    .opacity(0.4)
+                                Image(systemName: isStarFilled ? "star.fill" : "star")
+                                    .foregroundColor(isStarFilled ? Color.yellow : Color.black)
+                                    .opacity(isStarFilled ? 1 : 0.4)
                                     .offset(x: 15, y: 5)
                             }
                         }
@@ -136,7 +140,9 @@ struct MarketView: View {
                     .offset(x: -limitedOffset * -0.1)
                 Spacer()
                 
-                NavigationLink(destination: EmptyView()) {
+                Button(action: {
+                    showSheet.toggle()
+                }) {
                     Image(systemName: "plus")
                         .resizable()
                         .foregroundColor(.white)
@@ -157,5 +163,5 @@ struct MarketView: View {
 }
 
 #Preview {
-    MarketView(marketViewModel: MarketViewModel())
+    MarketView(marketViewModel: MarketViewModel(), showSheet: .constant(false))
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
 		1506C7072B33776B0010022F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7062B33776B0010022F /* AppColor.swift */; };
+		15B981CB2B3849F000948774 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CA2B3849F000948774 /* RoundedCorners.swift */; };
+		15B981D02B38502F00948774 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CF2B38502F00948774 /* BottomSheetView.swift */; };
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
 		15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC42B306A5700454FA8 /* ContentView.swift */; };
 		15D43DC72B306A5A00454FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D43DC62B306A5A00454FA8 /* Images.xcassets */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		1506C7062B33776B0010022F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		15B981CA2B3849F000948774 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		15B981CF2B38502F00948774 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D43DC22B306A5700454FA8 /* myPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPetApp.swift; sourceTree = "<group>"; };
 		15D43DC42B306A5700454FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 				1506C7062B33776B0010022F /* AppColor.swift */,
 			);
 			path = AppColors;
+			sourceTree = "<group>";
+		};
+		15B981C72B38498200948774 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				15B981CF2B38502F00948774 /* BottomSheetView.swift */,
+				15B981CA2B3849F000948774 /* RoundedCorners.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 		15D43DB62B306A5700454FA8 = {
@@ -212,6 +225,7 @@
 		15D43DD62B306B5E00454FA8 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				15B981C72B38498200948774 /* BottomSheet */,
 				15D43E1B2B30B63700454FA8 /* TabBar */,
 				1506C7022B3364180010022F /* ViewOffsetKey */,
 			);
@@ -465,6 +479,7 @@
 				15D43E222B30C0B400454FA8 /* AuthDataResultModel.swift in Sources */,
 				15D43E032B30AE0300454FA8 /* RootView.swift in Sources */,
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
+				15B981D02B38502F00948774 /* BottomSheetView.swift in Sources */,
 				15D43E162B30B4E600454FA8 /* MarketView.swift in Sources */,
 				1506C7072B33776B0010022F /* AppColor.swift in Sources */,
 				15D43DF22B309FF300454FA8 /* DarkBackground.swift in Sources */,
@@ -480,6 +495,7 @@
 				15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
 				15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */,
+				15B981CB2B3849F000948774 /* RoundedCorners.swift in Sources */,
 				15D43E382B33414900454FA8 /* MissingPetsView.swift in Sources */,
 				15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */,
 				15D43E1A2B30B63400454FA8 /* TabBarView.swift in Sources */,
