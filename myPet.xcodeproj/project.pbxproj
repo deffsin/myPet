@@ -209,7 +209,6 @@
 			children = (
 				15D43DF32B30A78D00454FA8 /* AuthenticationView.swift */,
 				15D43DF52B30A79800454FA8 /* AuthenticationViewModel.swift */,
-				15D43E252B30C89A00454FA8 /* SocialMediaButton.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -225,6 +224,7 @@
 		15D43DD62B306B5E00454FA8 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				15D43E252B30C89A00454FA8 /* SocialMediaButton.swift */,
 				15B981C72B38498200948774 /* BottomSheet */,
 				15D43E1B2B30B63700454FA8 /* TabBar */,
 				1506C7022B3364180010022F /* ViewOffsetKey */,
