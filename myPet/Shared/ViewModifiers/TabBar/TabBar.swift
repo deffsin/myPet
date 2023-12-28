@@ -14,6 +14,7 @@ struct TabBar: View {
     @StateObject var profileViewModel = ProfileViewModel()
     
     @State private var selectedTab: Tab = .market
+    @State var showSheetInMarketView: Bool
     
     @Binding var showSignInView: Bool
     
@@ -25,7 +26,7 @@ struct TabBar: View {
             ZStack {
                 switch selectedTab {
                 case .market:
-                    MarketView(marketViewModel: marketViewModel)
+                    MarketView(marketViewModel: marketViewModel, showSheet: $showSheetInMarketView)
                 case .shop:
                     ShopView()
                 case .missingPets:
@@ -37,13 +38,14 @@ struct TabBar: View {
                 }
                 
                 TabBarView(selectedTab: $selectedTab)
+                    .overlay(BottomSheetView(isShowing: $showSheetInMarketView, height: 600))
             }
         }
     }
 }
 
 #Preview {
-    TabBar(showSignInView: .constant(false))
+    TabBar(showSheetInMarketView: false, showSignInView: .constant(false))
 }
 
 

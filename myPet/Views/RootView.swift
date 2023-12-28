@@ -14,7 +14,7 @@ struct RootView: View {
         NavigationStack {
             ZStack {
                 if !showSignInView {
-                    TabBar(showSignInView: $showSignInView)
+                    TabBar(showSheetInMarketView: false, showSignInView: $showSignInView)
                 }
             }
         }

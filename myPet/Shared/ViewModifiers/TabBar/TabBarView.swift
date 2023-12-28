@@ -66,11 +66,11 @@ fileprivate struct TabsLayoutView: View {
                     if isSelected {
                         Circle()
                             .shadow(radius: 15)
-                            .foregroundColor(Color(red: 0.10, green: 0.75, blue: 0.40))
+                            .foregroundColor(Color(appColor: .greenColor))
                             .background {
                                 Circle()
                                     .stroke(lineWidth: 11)
-                                    .foregroundColor(tabBackGroundColor)
+                                    .foregroundColor(Color(appColor: .whiteColor))
                             }
                             .offset(y: -20)
                             .matchedGeometryEffect(id: "Selected Tab", in: namespace)
