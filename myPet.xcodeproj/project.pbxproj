@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
 		1506C7072B33776B0010022F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7062B33776B0010022F /* AppColor.swift */; };
+		157960B92B3E3275003AE69F /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960B82B3E3275003AE69F /* InputField.swift */; };
+		157960BB2B3E3401003AE69F /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */; };
 		15B981CB2B3849F000948774 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CA2B3849F000948774 /* RoundedCorners.swift */; };
 		15B981D02B38502F00948774 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CF2B38502F00948774 /* BottomSheetView.swift */; };
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		1506C7062B33776B0010022F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		157960B82B3E3275003AE69F /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
 		15B981CA2B3849F000948774 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		15B981CF2B38502F00948774 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				15B981CF2B38502F00948774 /* BottomSheetView.swift */,
-				15B981CA2B3849F000948774 /* RoundedCorners.swift */,
+				157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -225,7 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				15D43E252B30C89A00454FA8 /* SocialMediaButton.swift */,
-				15B981C72B38498200948774 /* BottomSheet */,
+				157960B82B3E3275003AE69F /* InputField.swift */,
+				15B981CA2B3849F000948774 /* RoundedCorners.swift */,
 				15D43E1B2B30B63700454FA8 /* TabBar */,
 				1506C7022B3364180010022F /* ViewOffsetKey */,
 			);
@@ -295,6 +300,7 @@
 			children = (
 				15D43E152B30B4E600454FA8 /* MarketView.swift */,
 				15D43E172B30B53900454FA8 /* MarketViewModel.swift */,
+				15B981C72B38498200948774 /* BottomSheet */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				15D43E242B30C0B400454FA8 /* AuthenticationManager.swift in Sources */,
 				15D43E2D2B30CB6800454FA8 /* UserManager.swift in Sources */,
 				15D43E182B30B53900454FA8 /* MarketViewModel.swift in Sources */,
+				157960BB2B3E3401003AE69F /* BottomSheetViewModel.swift in Sources */,
 				15D43E222B30C0B400454FA8 /* AuthDataResultModel.swift in Sources */,
 				15D43E032B30AE0300454FA8 /* RootView.swift in Sources */,
 				15D43DE32B306EDD00454FA8 /* Font.swift in Sources */,
@@ -495,6 +502,7 @@
 				15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
 				15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */,
+				157960B92B3E3275003AE69F /* InputField.swift in Sources */,
 				15B981CB2B3849F000948774 /* RoundedCorners.swift in Sources */,
 				15D43E382B33414900454FA8 /* MissingPetsView.swift in Sources */,
 				15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */,

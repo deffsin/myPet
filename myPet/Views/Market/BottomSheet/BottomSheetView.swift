@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct BottomSheetView: View {
+    @ObservedObject var bottomSheetViewModel: BottomSheetViewModel
+    
     @Binding var isShowing: Bool
+    
     var height: CGFloat = 100
 
     var body: some View {
@@ -24,7 +27,7 @@ struct BottomSheetView: View {
                         }
                     }
                 
-                VStack {
+                VStack(alignment: .leading) {
                     HStack {
                         Text("Sheet!")
                         Spacer()
@@ -58,5 +61,5 @@ struct BottomSheetView: View {
 }
 
 #Preview {
-    BottomSheetView(isShowing: .constant(false))
+    BottomSheetView(bottomSheetViewModel: BottomSheetViewModel(), isShowing: .constant(true))
 }
