@@ -30,6 +30,7 @@ final class UserManager {
         let decoder = Firestore.Decoder()
         return decoder
     }()
+    // test
     
     func createNewUser(user: UserModel) async throws {
         do {
