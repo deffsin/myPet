@@ -12,7 +12,7 @@ struct BottomSheetView: View {
     
     @Binding var isShowing: Bool
     
-    var height: CGFloat = 100
+    var height: CGFloat = 700
 
     var body: some View {
         

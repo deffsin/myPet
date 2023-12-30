@@ -38,7 +38,7 @@ struct TabBar: View {
                 }
                 
                 TabBarView(selectedTab: $selectedTab)
-                    .overlay(BottomSheetView(isShowing: $showSheetInMarketView, height: 600))
+                    .overlay(BottomSheetView(bottomSheetViewModel: BottomSheetViewModel(), isShowing: $showSheetInMarketView, height: 600))
             }
         }
     }
