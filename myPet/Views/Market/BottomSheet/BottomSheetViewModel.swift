@@ -9,10 +9,12 @@ import Foundation
 
 @MainActor
 final class BottomSheetViewModel: ObservableObject {
-    @Published var petBreed: String = ""
-    @Published var petDescription: String = ""
-    @Published var petType: String = ""
-    @Published var petPrice: Int = 0
-    @Published var petLocation: String = ""
+    // @Published private(set) var user: UserModel? = nil ????????
+    @Published var animalBreed: String = ""
+    @Published var animalDescription: String?
+    @Published var animalType: String = ""
+    @Published var animalPrice: Int = 0
+    @Published var animalLocation: String?
+    @Published var dataCreated: Date?
     // photos
 }
