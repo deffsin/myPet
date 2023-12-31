@@ -11,11 +11,11 @@ struct AnimalModel: Codable {
     let ownerId: String
     let ownerFullname: String?
     let ownerPhoneNumber: String?
-    let ownerDocId: String?
+    let animalDocId: String?
     let animalBreed: String?
     let animalDescription: String?
     let animalType: String?
-    let animalPrice: Int?
+    let animalPrice: String?
     let animalLocation: String?
     let dataCreated: Date?
     
@@ -23,11 +23,11 @@ struct AnimalModel: Codable {
         self.ownerId = auth.uid
         self.ownerFullname = auth.name
         self.ownerPhoneNumber = ""
-        self.ownerDocId = ""
+        self.animalDocId = ""
         self.animalBreed = ""
         self.animalDescription = ""
         self.animalType = ""
-        self.animalPrice = 0
+        self.animalPrice = ""
         self.animalLocation = ""
         self.dataCreated = Date()
     }
@@ -36,18 +36,18 @@ struct AnimalModel: Codable {
         ownerId: String,
         ownerFullname: String? = nil,
         ownerPhoneNumber: String? = nil,
-        ownerDocId: String? = nil,
+        animalDocId: String? = nil,
         animalBreed: String? = nil,
         animalDescription: String? = nil,
         animalType: String? = nil,
-        animalPrice: Int? = 0,
+        animalPrice: String? = nil,
         animalLocation: String? = nil,
         dataCreated: Date? = nil
     ) {
         self.ownerId = ownerId
         self.ownerFullname = ownerFullname
         self.ownerPhoneNumber = ownerPhoneNumber
-        self.ownerDocId = ownerDocId
+        self.animalDocId = animalDocId
         self.animalBreed = animalBreed
         self.animalDescription = animalDescription
         self.animalType = animalType
@@ -60,7 +60,7 @@ struct AnimalModel: Codable {
         case ownerId = "owner_id"
         case ownerFullname = "owner_fullname"
         case ownerPhoneNumber = "owner_phonenumber"
-        case ownerDocId = "owner_doc_id"
+        case animalDocId = "animal_doc_id"
         case animalBreed = "animal_breed"
         case animalDescription = "animal_description"
         case animalType = "animal_type"
@@ -75,11 +75,11 @@ struct AnimalModel: Codable {
         self.ownerId = try container.decode(String.self, forKey: .ownerId)
         self.ownerFullname = try container.decodeIfPresent(String.self, forKey: .ownerFullname)
         self.ownerPhoneNumber = try container.decodeIfPresent(String.self, forKey: .ownerPhoneNumber)
-        self.ownerDocId = try container.decodeIfPresent(String.self, forKey: .ownerDocId)
+        self.animalDocId = try container.decodeIfPresent(String.self, forKey: .animalDocId)
         self.animalBreed = try container.decodeIfPresent(String.self, forKey: .animalBreed)
         self.animalDescription = try container.decodeIfPresent(String.self, forKey: .animalDescription)
         self.animalType = try container.decodeIfPresent(String.self, forKey: .animalType)
-        self.animalPrice = try container.decodeIfPresent(Int.self, forKey: .animalPrice)
+        self.animalPrice = try container.decodeIfPresent(String.self, forKey: .animalPrice)
         self.animalLocation = try container.decodeIfPresent(String.self, forKey: .animalLocation)
         self.dataCreated = try container.decodeIfPresent(Date.self, forKey: .dataCreated)
     }
@@ -90,7 +90,7 @@ struct AnimalModel: Codable {
         try container.encode(self.ownerId, forKey: .ownerId)
         try container.encode(self.ownerFullname, forKey: .ownerFullname)
         try container.encode(self.ownerPhoneNumber, forKey: .ownerPhoneNumber)
-        try container.encode(self.ownerDocId, forKey: .ownerDocId)
+        try container.encode(self.animalDocId, forKey: .animalDocId)
         try container.encode(self.animalBreed, forKey: .animalBreed)
         try container.encode(self.animalDescription, forKey: .animalDescription)
         try container.encode(self.animalType, forKey: .animalType)

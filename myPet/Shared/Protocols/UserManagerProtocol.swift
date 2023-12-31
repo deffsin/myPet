@@ -15,5 +15,5 @@ protocol UserManagerProtocol {
     func animalInformationDocument(userId: String, animalInformationId: String) -> DocumentReference
     func getFirstAnimal(userId: String) async throws -> AnimalModel?
     func getAllAnimals() async throws -> [AnimalModel]
-    func addAnimalToMarket(ownerId: String, ownerFullname: String, ownerPhoneNumber: String, ownerDocId: String, animalBreed: String, animalDescription: String, animalType: String, animalPrice: Int, animalLocation: String, dataCreated: Date) async throws
+    func addAnimalToMarket(ownerId: String, ownerFullname: String, ownerPhoneNumber: String, animalDocId: String, animalBreed: String, animalDescription: String, animalType: String, animalPrice: String, animalLocation: String, dataCreated: Date) async throws
 }

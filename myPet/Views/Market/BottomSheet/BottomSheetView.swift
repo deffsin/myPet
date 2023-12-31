@@ -29,7 +29,13 @@ struct BottomSheetView: View {
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("Sheet!")
+                        VStack {
+                            InputField(text: $bottomSheetViewModel.animalBreed, title: "Animal breed", keyboardType: .alphabet)
+                            InputField(text: $bottomSheetViewModel.animalDescription, title: "Description", keyboardType: .default)
+                            InputField(text: $bottomSheetViewModel.animalType, title: "Animal type", keyboardType: .default)
+                            InputField(text: $bottomSheetViewModel.animalPrice, title: "Price", keyboardType: .numbersAndPunctuation)
+                            InputField(text: $bottomSheetViewModel.animalLocation, title: "Location", keyboardType: .default)
+                        }
                         Spacer()
                         Button(action: {
                             isShowing = false
@@ -42,12 +48,19 @@ struct BottomSheetView: View {
                                 .clipShape(Circle())
                         }
                     }
+                    
+                    Button(action: {
+                        bottomSheetViewModel.addAnimalToMarket(animalBreed: bottomSheetViewModel.animalBreed, animalDescription: bottomSheetViewModel.animalDescription, animalType: bottomSheetViewModel.animalType, animalPrice: bottomSheetViewModel.animalPrice, animalLocation: bottomSheetViewModel.animalLocation, dataCreated: Date())
+                        
+                    }) {
+                        Text("Add to market!")
+                    }
                     Spacer()
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: height)
                 .padding([.horizontal, .vertical], 15)
-                .background(LinearGradient(colors: [Color(appColor: .darkColorBackground), Color(appColor: .lightColorBackground)], startPoint: .top, endPoint: .bottom).opacity(0.6))
+                .background(.ultraThinMaterial)
                 .cornerRadius(16, corners: [.topLeft, .topRight])
                 .transition(.opacity.combined(with: .move(edge: .bottom)))
             }
@@ -56,6 +69,9 @@ struct BottomSheetView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
         .animation(.easeInOut, value: isShowing)
+        .task {
+            try? await bottomSheetViewModel.loadCurrentUser()
+        }
         
     }
 }

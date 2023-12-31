@@ -20,16 +20,6 @@ final class UserManager: UserManagerProtocol {
         userCollection.document(userId)
     }
     
-    private let encoder: Firestore.Encoder = {
-        let encoder = Firestore.Encoder()
-        return encoder
-    }()
-    
-    private let decoder: Firestore.Decoder = {
-        let decoder = Firestore.Decoder()
-        return decoder
-    }()
-    
     func createNewUser(user: UserModel) async throws {
         do {
             try userDocument(userId: user.userId).setData(from: user, merge: false)
@@ -89,16 +79,16 @@ final class UserManager: UserManagerProtocol {
         }
     }
     
-    func addAnimalToMarket(ownerId: String, ownerFullname: String, ownerPhoneNumber: String, ownerDocId: String, animalBreed: String, animalDescription: String, animalType: String, animalPrice: Int, animalLocation: String, dataCreated: Date) async throws {
+    func addAnimalToMarket(ownerId: String, ownerFullname: String, ownerPhoneNumber: String, animalDocId: String, animalBreed: String, animalDescription: String, animalType: String, animalPrice: String, animalLocation: String, dataCreated: Date) async throws {
         do {
             let document = animalInformationCollection(userId: ownerId).document()
             let documentId = document.documentID
              
             let data: [String:Any] = [
-                AnimalModel.CodingKeys.ownerId.rawValue : documentId,
+                AnimalModel.CodingKeys.ownerId.rawValue : ownerId,
                 AnimalModel.CodingKeys.ownerFullname.rawValue : ownerFullname,
                 AnimalModel.CodingKeys.ownerPhoneNumber.rawValue : ownerPhoneNumber,
-                AnimalModel.CodingKeys.ownerDocId.rawValue : ownerDocId,
+                AnimalModel.CodingKeys.animalDocId.rawValue : documentId,
                 AnimalModel.CodingKeys.animalBreed.rawValue : animalBreed,
                 AnimalModel.CodingKeys.animalDescription.rawValue : animalDescription,
                 AnimalModel.CodingKeys.animalType.rawValue : animalType,
