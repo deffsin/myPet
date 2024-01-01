@@ -38,6 +38,7 @@ final class UserManager: UserManagerProtocol {
         }
     }
     
+    /// Market
     func animalInformationCollection(userId: String) -> CollectionReference {
         userDocument(userId: userId).collection("animal_information")
     }
@@ -101,4 +102,5 @@ final class UserManager: UserManagerProtocol {
             throw UserManagerError.connectionFailed
         }
     }
+    /// Market
 }

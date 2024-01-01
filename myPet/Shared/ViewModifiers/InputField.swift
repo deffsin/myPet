@@ -14,14 +14,18 @@ struct InputField: View {
     var isValid: Bool?
     var errorMessage: String?
     var keyboardType: UIKeyboardType = .default
+    var customWidth: CGFloat = 250
+    var customHeight: CGFloat = 25
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title)
-                .foregroundColor(.black)
+                .foregroundStyle(.white)
             
             TextField("", text: $text)
-                .padding(10)
+                .frame(width: customWidth, height: customHeight)
+                .foregroundStyle(.black)
+                .padding(5)
                 .background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .overlay(RoundedRectangle(cornerRadius: 8)
