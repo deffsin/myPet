@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
 		1506C7072B33776B0010022F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7062B33776B0010022F /* AppColor.swift */; };
+		155A24512B42E83700BF6131 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155A24502B42E83700BF6131 /* SnackBar.swift */; };
 		157960B92B3E3275003AE69F /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960B82B3E3275003AE69F /* InputField.swift */; };
 		157960BB2B3E3401003AE69F /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */; };
 		157960BD2B3F9565003AE69F /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BC2B3F9565003AE69F /* AnimalModel.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		1506C7062B33776B0010022F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		155A24502B42E83700BF6131 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
 		157960B82B3E3275003AE69F /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
 		157960BC2B3F9565003AE69F /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		15D43DD62B306B5E00454FA8 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				155A24502B42E83700BF6131 /* SnackBar.swift */,
 				15D43E252B30C89A00454FA8 /* SocialMediaButton.swift */,
 				157960B82B3E3275003AE69F /* InputField.swift */,
 				15B981CA2B3849F000948774 /* RoundedCorners.swift */,
@@ -515,6 +518,7 @@
 				15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */,
 				15D43DF42B30A78D00454FA8 /* AuthenticationView.swift in Sources */,
 				1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */,
+				155A24512B42E83700BF6131 /* SnackBar.swift in Sources */,
 				15D43E3D2B33416500454FA8 /* ProfileView.swift in Sources */,
 				15D43DC52B306A5700454FA8 /* ContentView.swift in Sources */,
 				15D43E3A2B33415200454FA8 /* ClinicsView.swift in Sources */,

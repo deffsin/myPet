@@ -10,12 +10,13 @@ import SwiftUI
 struct BottomSheetView: View {
     @ObservedObject var bottomSheetViewModel: BottomSheetViewModel
     
+    @State private var snackBarTimer: DispatchWorkItem?
+    
     @Binding var isShowing: Bool
     
     var height: CGFloat = 600
 
     var body: some View {
-        
         ZStack(alignment: .bottom) {
             if isShowing {
                 Color.black
@@ -35,7 +36,6 @@ struct BottomSheetView: View {
                         }) {
                             Text("Close")
                                 .font(.fontSemiBoldSmall)
-                                .foregroundStyle(.white)
                         }
                     }
                     
@@ -53,12 +53,8 @@ struct BottomSheetView: View {
                             }) {
                                 Text("Add to market")
                                     .font(.fontSemiBoldMedium)
-                                    .foregroundStyle(.white)
                                     .frame(width: 135, height: 30)
-                                    .padding(5)
-                                    .background(Color(appColor: .greenColor))
-                                    .cornerRadius(5)
-                                    .padding(.top, 15)
+                                    .padding(.top, 20)
                             }
                             Spacer()
                         }
@@ -71,6 +67,13 @@ struct BottomSheetView: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(16, corners: [.topLeft, .topRight])
                 .transition(.opacity.combined(with: .move(edge: .bottom)))
+                .overlay {
+                    if bottomSheetViewModel.isShowingSnackBar {
+                        SnackBarView(isShowing: $bottomSheetViewModel.isShowingSnackBar, message: bottomSheetViewModel.messageToUser)
+                            .onAppear(perform: startSnackBarTimer)
+                            .offset(y: 200)
+                    }
+                }
             }
             
         }
@@ -80,7 +83,19 @@ struct BottomSheetView: View {
         .task {
             try? await bottomSheetViewModel.loadCurrentUser()
         }
-        
+    }
+    
+    private func startSnackBarTimer() {
+        snackBarTimer?.cancel()
+
+        let item = DispatchWorkItem {
+            withAnimation {
+                bottomSheetViewModel.isShowingSnackBar = false
+            }
+        }
+
+        snackBarTimer = item
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: item)
     }
 }
 
