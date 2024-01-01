@@ -11,10 +11,11 @@ struct InputField: View {
     @Binding var text: String
     
     var title: String
+    var textFieldText: String
     var isValid: Bool?
     var errorMessage: String?
     var keyboardType: UIKeyboardType = .default
-    var customWidth: CGFloat = 250
+    var customWidth: CGFloat = 200
     var customHeight: CGFloat = 25
     
     var body: some View {
@@ -22,7 +23,7 @@ struct InputField: View {
             Text(title)
                 .foregroundStyle(.white)
             
-            TextField("", text: $text)
+            TextField(textFieldText, text: $text)
                 .frame(width: customWidth, height: customHeight)
                 .foregroundStyle(.black)
                 .padding(5)

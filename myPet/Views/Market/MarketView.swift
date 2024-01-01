@@ -114,7 +114,7 @@ struct MarketView: View {
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .overlay(
             RoundedRectangle(cornerRadius: 15)
-                .stroke(Color.green, lineWidth: 1)
+                .stroke(Color.gray, lineWidth: 1)
         )
     }
     

@@ -40,11 +40,11 @@ struct BottomSheetView: View {
                     }
                     
                     VStack(alignment: .leading, spacing: 15) {
-                        InputField(text: $bottomSheetViewModel.animalBreed, title: "Animal breed:", keyboardType: .alphabet, customWidth: 200)
-                        InputField(text: $bottomSheetViewModel.animalDescription, title: "Description:", keyboardType: .default, customWidth: 200) // TextEditor...
-                        InputField(text: $bottomSheetViewModel.animalType, title: "Animal type:", keyboardType: .default, customWidth: 200)
-                        InputField(text: $bottomSheetViewModel.animalPrice, title: "Price:", keyboardType: .numbersAndPunctuation, customWidth: 70)
-                        InputField(text: $bottomSheetViewModel.animalLocation, title: "Location:", keyboardType: .default, customWidth: 200)
+                        InputField(text: $bottomSheetViewModel.animalBreed, title: "Animal breed:", textFieldText: "Shiba-Inu, Bengal", keyboardType: .alphabet)
+                        InputField(text: $bottomSheetViewModel.animalDescription, title: "Description:", textFieldText: "Description", keyboardType: .default) // TextEditor...
+                        InputField(text: $bottomSheetViewModel.animalType, title: "Animal type:", textFieldText: "Mammals, Birds", keyboardType: .default)
+                        InputField(text: $bottomSheetViewModel.animalPrice, title: "Price:", textFieldText: "€", keyboardType: .numbersAndPunctuation, customWidth: 70)
+                        InputField(text: $bottomSheetViewModel.animalLocation, title: "Location:", textFieldText: "Where are the animals located?", keyboardType: .default)
                         
                         HStack {
                             Spacer()
