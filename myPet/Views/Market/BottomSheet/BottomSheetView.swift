@@ -80,6 +80,13 @@ struct BottomSheetView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
         .animation(.easeInOut, value: isShowing)
+        .onChange(of: bottomSheetViewModel.isShowingSnackBar) {
+            withAnimation {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+                    isShowing = false
+                }
+            }
+        }
         .task {
             try? await bottomSheetViewModel.loadCurrentUser()
         }
