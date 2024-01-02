@@ -9,11 +9,8 @@ import Foundation
 import FirebaseFirestore
 
 protocol UserManagerProtocol {
+    var userCollection: CollectionReference { get }
+    func userDocument(userId: String) -> DocumentReference
     func createNewUser(user: UserModel) async throws
     func getUser(userId: String) async throws -> UserModel
-    func animalInformationCollection(userId: String) -> CollectionReference
-    func animalInformationDocument(userId: String, animalInformationId: String) -> DocumentReference
-    func getFirstAnimal(userId: String) async throws -> AnimalModel?
-    func getAllAnimals() async throws -> [AnimalModel]
-    func addAnimalToMarket(ownerId: String, ownerFullname: String, ownerPhoneNumber: String, animalDocId: String, animalBreed: String, animalDescription: String, animalType: String, animalPrice: String, animalLocation: String, dataCreated: Date) async throws
 }

@@ -10,6 +10,7 @@
 		1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7032B3364320010022F /* ViewOffsetKey.swift */; };
 		1506C7072B33776B0010022F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506C7062B33776B0010022F /* AppColor.swift */; };
 		155A24512B42E83700BF6131 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155A24502B42E83700BF6131 /* SnackBar.swift */; };
+		155A24532B438DB200BF6131 /* MarketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155A24522B438DB200BF6131 /* MarketProtocol.swift */; };
 		157960B92B3E3275003AE69F /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960B82B3E3275003AE69F /* InputField.swift */; };
 		157960BB2B3E3401003AE69F /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */; };
 		157960BD2B3F9565003AE69F /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BC2B3F9565003AE69F /* AnimalModel.swift */; };
@@ -60,6 +61,7 @@
 		1506C7032B3364320010022F /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		1506C7062B33776B0010022F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		155A24502B42E83700BF6131 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		155A24522B438DB200BF6131 /* MarketProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketProtocol.swift; sourceTree = "<group>"; };
 		157960B82B3E3275003AE69F /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
 		157960BC2B3F9565003AE69F /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				157960BE2B40DF6A003AE69F /* UserManagerProtocol.swift */,
+				155A24522B438DB200BF6131 /* MarketProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				157960BD2B3F9565003AE69F /* AnimalModel.swift in Sources */,
 				15D43E232B30C0B400454FA8 /* SignInAppleHelper.swift in Sources */,
 				15D43E212B30C0B400454FA8 /* SignInGoogleHelper.swift in Sources */,
+				155A24532B438DB200BF6131 /* MarketProtocol.swift in Sources */,
 				15D43E3F2B3342B400454FA8 /* ProfileViewModel.swift in Sources */,
 				157960BF2B40DF6A003AE69F /* UserManagerProtocol.swift in Sources */,
 				15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */,
