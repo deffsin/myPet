@@ -10,7 +10,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 
-final class UserManager: UserManagerProtocol, MarketProtocol {
+final class UserManager: UserProtocol, MarketProtocol {
     static let shared = UserManager()
     private init() {}
     

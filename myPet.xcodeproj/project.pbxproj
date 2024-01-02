@@ -14,7 +14,7 @@
 		157960B92B3E3275003AE69F /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960B82B3E3275003AE69F /* InputField.swift */; };
 		157960BB2B3E3401003AE69F /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */; };
 		157960BD2B3F9565003AE69F /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BC2B3F9565003AE69F /* AnimalModel.swift */; };
-		157960BF2B40DF6A003AE69F /* UserManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BE2B40DF6A003AE69F /* UserManagerProtocol.swift */; };
+		157960BF2B40DF6A003AE69F /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157960BE2B40DF6A003AE69F /* UserProtocol.swift */; };
 		15B981CB2B3849F000948774 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CA2B3849F000948774 /* RoundedCorners.swift */; };
 		15B981D02B38502F00948774 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B981CF2B38502F00948774 /* BottomSheetView.swift */; };
 		15D43DC32B306A5700454FA8 /* myPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D43DC22B306A5700454FA8 /* myPetApp.swift */; };
@@ -65,7 +65,7 @@
 		157960B82B3E3275003AE69F /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		157960BA2B3E3401003AE69F /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
 		157960BC2B3F9565003AE69F /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
-		157960BE2B40DF6A003AE69F /* UserManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerProtocol.swift; sourceTree = "<group>"; };
+		157960BE2B40DF6A003AE69F /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		15B981CA2B3849F000948774 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		15B981CF2B38502F00948774 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		15D43DBF2B306A5700454FA8 /* myPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +142,7 @@
 		155A244D2B41B44700BF6131 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				157960BE2B40DF6A003AE69F /* UserManagerProtocol.swift */,
+				157960BE2B40DF6A003AE69F /* UserProtocol.swift */,
 				155A24522B438DB200BF6131 /* MarketProtocol.swift */,
 			);
 			path = Protocols;
@@ -518,7 +518,7 @@
 				15D43E212B30C0B400454FA8 /* SignInGoogleHelper.swift in Sources */,
 				155A24532B438DB200BF6131 /* MarketProtocol.swift in Sources */,
 				15D43E3F2B3342B400454FA8 /* ProfileViewModel.swift in Sources */,
-				157960BF2B40DF6A003AE69F /* UserManagerProtocol.swift in Sources */,
+				157960BF2B40DF6A003AE69F /* UserProtocol.swift in Sources */,
 				15D43E302B30CB9900454FA8 /* UserManagerError.swift in Sources */,
 				15D43DF42B30A78D00454FA8 /* AuthenticationView.swift in Sources */,
 				1506C7042B3364320010022F /* ViewOffsetKey.swift in Sources */,
