@@ -10,13 +10,15 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 
-final class UserManager: UserManagerProtocol {
+final class UserManager: UserProtocol, MarketProtocol {
     static let shared = UserManager()
     private init() {}
     
-    private let userCollection: CollectionReference = Firestore.firestore().collection("users")
-    
-    private func userDocument(userId: String) -> DocumentReference {
+    var userCollection: CollectionReference {
+        Firestore.firestore().collection("users")
+    }
+
+    func userDocument(userId: String) -> DocumentReference {
         userCollection.document(userId)
     }
     
