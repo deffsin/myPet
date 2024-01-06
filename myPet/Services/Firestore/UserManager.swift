@@ -41,6 +41,7 @@ final class UserManager: UserProtocol, MarketProtocol {
     }
     
     /// Market
+    // test
     func animalInformationCollection(userId: String) -> CollectionReference {
         userDocument(userId: userId).collection("animal_information")
     }
